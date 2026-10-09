@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class BreakLogic : MonoBehaviour
 {
     [SerializeField] private GameObject bTarget;
+    [SerializeField] private UI playerUI;
     private MeshRenderer target;
 
     private void Awake()
@@ -18,6 +20,7 @@ public class BreakLogic : MonoBehaviour
             var sTarget = Instantiate(bTarget, transform.position, transform.rotation);
             Destroy(sTarget, 3);
             target.enabled = false;
+            playerUI.UpdateUI();
             StartCoroutine(ReenableMeshRenderer());
         }
     }
