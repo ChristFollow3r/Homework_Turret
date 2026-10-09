@@ -11,12 +11,14 @@ public class MovableTarget : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private int pointsGetFucked;
     [SerializeField] private int nuhUh;
+    [SerializeField] private GameObject breakableLittleTarget;
     
     private Rigidbody rb;
-
+    private MeshRenderer meshRenderer;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        meshRenderer = GetComponent<MeshRenderer>();
     }
 
     private void Start()
@@ -51,6 +53,21 @@ public class MovableTarget : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (CompareTag("red")) ui.UpdateUI(pointsGetFucked);
-        else if (CompareTag("notRed")) ui.UpdateUI(nuhUh);
+        else if (CompareTag("notRed") && meshRenderer.enabled)
+        {
+            ui.UpdateUI(nuhUh);
+            var sTarget = Instantiate(breakableLittleTarget, transform.position, transform.rotation); 
+            Destroy(sTarget, 3);
+            meshRenderer.enabled = false;
+            StartCoroutine(ReenableMeshRenderer());
+        }
     }
+    
+    IEnumerator ReenableMeshRenderer()
+    { ;
+        yield return new WaitForSeconds(3);
+        meshRenderer.enabled = true;
+    }
+
+
 }
