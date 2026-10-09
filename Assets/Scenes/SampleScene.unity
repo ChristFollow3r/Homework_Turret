@@ -468,6 +468,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1385772883469899862, guid: 42c327db9d8bbdf47aab70bbab368fa3, type: 3}
+      propertyPath: points
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385772883469899862, guid: 42c327db9d8bbdf47aab70bbab368fa3, type: 3}
       propertyPath: playerUI
       value: 
       objectReference: {fileID: 1526779930}
@@ -1085,6 +1089,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1385772883469899862, guid: 42c327db9d8bbdf47aab70bbab368fa3, type: 3}
+      propertyPath: points
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385772883469899862, guid: 42c327db9d8bbdf47aab70bbab368fa3, type: 3}
       propertyPath: playerUI
       value: 
       objectReference: {fileID: 1526779930}
@@ -1494,6 +1502,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1385772883469899862, guid: 42c327db9d8bbdf47aab70bbab368fa3, type: 3}
+      propertyPath: points
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385772883469899862, guid: 42c327db9d8bbdf47aab70bbab368fa3, type: 3}
       propertyPath: playerUI
       value: 
       objectReference: {fileID: 1526779930}
@@ -1615,6 +1627,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1385772883469899862, guid: 42c327db9d8bbdf47aab70bbab368fa3, type: 3}
+      propertyPath: points
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1385772883469899862, guid: 42c327db9d8bbdf47aab70bbab368fa3, type: 3}
       propertyPath: playerUI
       value: 
@@ -1775,6 +1791,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1385772883469899862, guid: 42c327db9d8bbdf47aab70bbab368fa3, type: 3}
+      propertyPath: points
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385772883469899862, guid: 42c327db9d8bbdf47aab70bbab368fa3, type: 3}
       propertyPath: playerUI
       value: 
       objectReference: {fileID: 1526779930}
@@ -1911,6 +1931,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1385772883469899862, guid: 42c327db9d8bbdf47aab70bbab368fa3, type: 3}
+      propertyPath: points
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385772883469899862, guid: 42c327db9d8bbdf47aab70bbab368fa3, type: 3}
       propertyPath: playerUI
       value: 
       objectReference: {fileID: 1526779930}
@@ -2001,6 +2025,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1385772883469899862, guid: 42c327db9d8bbdf47aab70bbab368fa3, type: 3}
+      propertyPath: points
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1385772883469899862, guid: 42c327db9d8bbdf47aab70bbab368fa3, type: 3}
       propertyPath: playerUI
       value: 
