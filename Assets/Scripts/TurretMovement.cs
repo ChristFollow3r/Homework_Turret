@@ -10,8 +10,10 @@ public class TurretMovement : MonoBehaviour
     [SerializeField] private GameObject barrel;
     [SerializeField] private GameObject un;
     [SerializeField] private float supportSens;
+    [SerializeField] private float barrelSense;
 
     private InputSystem_Actions input;
+    private Vector3 mouseInput;
 
     private void Awake()
     {
@@ -21,13 +23,18 @@ public class TurretMovement : MonoBehaviour
 
     void Update()
     {
-        SupportMovement();
+        mouseInput = Mouse.current.delta.value;
+        SupportMovement(mouseInput);
+        BarrelMovement(mouseInput);
     }
 
-    void SupportMovement()
+    void SupportMovement(Vector3 mouseInput)
     {
-        Vector3 direction = Mouse.current.delta.value;
-        
-        support.transform.eulerAngles += new Vector3(0, direction.x * supportSens, 0);
+        support.transform.eulerAngles += new Vector3(0, mouseInput.x * supportSens, 0);
+    }
+
+    void BarrelMovement(Vector3 mouseInput)
+    {
+        barrel.transform.eulerAngles += new Vector3(mouseInput.y * barrelSense, 0, 0);
     }
 }
