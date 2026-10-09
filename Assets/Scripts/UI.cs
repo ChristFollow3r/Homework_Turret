@@ -8,9 +8,10 @@ public class UI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI points;
     private int iPoints = 0;
     
-    public void UpdateUI()
+    public void UpdateUI(int tPoints)
     {
-        iPoints += 100;
+        iPoints += tPoints;
         points.text = iPoints.ToString();
     }
+    
 }

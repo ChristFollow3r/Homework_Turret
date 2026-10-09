@@ -6,6 +6,7 @@ public class BreakLogic : MonoBehaviour
 {
     [SerializeField] private GameObject bTarget;
     [SerializeField] private UI playerUI;
+    [SerializeField] private int points;
     private MeshRenderer target;
 
     private void Awake()
@@ -20,7 +21,7 @@ public class BreakLogic : MonoBehaviour
             var sTarget = Instantiate(bTarget, transform.position, transform.rotation);
             Destroy(sTarget, 3);
             target.enabled = false;
-            playerUI.UpdateUI();
+            playerUI.UpdateUI(points);
             StartCoroutine(ReenableMeshRenderer());
         }
     }
